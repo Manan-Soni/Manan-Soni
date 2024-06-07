@@ -2,9 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  opacity: 1;
+  background-image: radial-gradient(#ffffff 0.7000000000000001px, #ffffff 0.7000000000000001px);
+  background-size: 14px 14px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +19,303 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#navbar{
+  margin-left: -30px;
+  margin-top: 10vh;
+  line-break: 10px;
+  height: 300px;
+  width: 9vw;
+  position: fixed;
+  background-color: #000000;
+  font-family: 'Share Tech';
+  line-height: 3.5;
+  align-self: right;
+  float: left;
+  overflow: hidden;
+  transition: .2s;;
+  border: 2px #007402 solid;
+  border-radius: 20px;
+  z-index: 99999999;
+}
+
+#navbar:hover {
+  font-size: 20px;
+  height: 360px;
+  width: 10vw;
+  background-color: #0133028d;
+  z-index: 99999999;
+  border: 1px #000000;
+  border-radius: 10px;
+  flex: left;
+  box-shadow: 5px 20px 12px black;
+}
+
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: green !important;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: white;
+
+}
+
+#hero p {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  margin-left: 9vw;
+  margin-top: 100px;
+  width: 62%;
+  color: rgb(102, 102, 102);
+  font-size: 60px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 62% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(19, 223, 5); }
+}
+
+#hero h2{
+  font-family: 'Share Tech';
+  margin-left: 9vw;
+  color: rgb(102, 102, 102);
+}
+
+#aboutme h1{
+  font-family: 'Share Tech';
+  margin-top: 90vh;
+  margin-bottom: 90vh;
+}
+
+#aboutme {
+  color: rgb(101, 101, 101);
+  width: 70%;
+  margin-top: 10vh;
+  margin-left: 9vw;
+  margin-right: 5vw;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+#aboutme p{
+  font-size: 20px;
+}
+
+#heading_skillset{
+  font-size: 50px;
+  align-self: center;
+  font-family: 'Share Tech';
+  color: rgb(102, 102, 102);
+  margin-top: 90vh;
+  margin-bottom: 90vh;
+  margin-left: 9vw;
+}
+
+#subheading_skillset{
+  font-size: 100px;
+  align-self: center;
+  font-family: 'Share Tech';
+  color: rgb(102, 102, 102);
+  margin-top: 100vh;
+  margin-left: 37vw;
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+#piechart{
+  border-radius: 30px;
+  transition: 0.3s;
+  margin-top: 60px;
+  float: left;
+  background-color: rgb(235, 255, 235);
+}
+
+.card{
+  margin-left: 9vw;
+  transition: 0.5s;
+  float: left;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 5px 20px 22px black;
+  cursor: pointer;
+}
+
+#skillset{
+  border: 3px black solid;
+  margin-left: 16vw;
+  width: 1200px;
+  height: 95vh;
+  align-self: center;
+  border-radius: 13px;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+#skillset:hover{
+  transform: scale(1.05);
+  margin-left: 16vw;
+  box-shadow: 5px 20px 12px black;
+}
+
+#skillset_table {
+  color: rgb(102, 102, 102);
+  margin-top: 100px;
+}
+
+#skillset h1{
+  font-family: 'Share Tech';
+  margin-top: 50px;
+  margin-left: 9vw;
+}
+
+#skills h2{
+  font-family: 'Share Tech';
+}
+
+#skillset p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+#skills_table{
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+  align-self: center;
+  padding-left: 65px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 2vw;
+}
+
+table{
+  margin-left: 35px;
+}
+
+#heading_projects{
+  font-size: 60px;
+  margin-left: 9vw;
+  font-family: 'Share Tech';
+  color: rgb(102, 102, 102);
+  margin-top: 90vh;
+  margin-bottom: 90vh;
+}
+
+#heading_unrealengine{
+  font-family: 'Share Tech';
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+#text_unrealengine{
+  font-family: 'Courier New', Courier, monospace;
+  color: #000000;
+  font-size: 20px;
+  transition: opacity 10s ;
+}
+
+.card-img-top{
+  width: 50%;
+}
+
+#unrealengine{
+  color: white;
+  background-color: #ccd8c8;
+  border: 3px rgb(0, 0, 0) solid;
+  transition: 0.3s ;
+  margin-left: 9vw;
+}
+
+#text_unreal{
+  color: #000000;
+}
+
+#expand_button_unreal{
+  color: white;
+}
+
+#heading_achievements{
+  margin-left: 9vw;
+  font-family: 'Share Tech';
+  color: rgb(102, 102, 102);
+  margin-top: 90vh;
+  margin-bottom: 90vh;
+}
+
+#achv_list{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(102, 102, 102);
+  font-size: 20px;
+  list-style-type: none;
+  margin-left: 7vw;
+}
+
+#contactme{
+  margin-left: 500px;
+}
+
+.list-group{
+  list-style-type: none;
+  margin-left: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(102, 102, 102);
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+#hexsociety{
+  margin-left: 9vw;
+}
+
+#hex_heading1{
+  font-family: 'Share Tech';
+  color: rgb(102, 102, 102);
+  margin-top: 50px;
+}
+
+#hex_heading2{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(102, 102, 102);
+  margin-top: 20px;
+}
+
+#list_hexsociety{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(102, 102, 102);
+  margin-top: 20px;
 }

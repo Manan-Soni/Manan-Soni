@@ -1,0 +1,24 @@
+
+def quatro_divisors():
+    nums = int(input())
+    l = []
+    for i in range(nums):
+        l1 = []
+        x = int(input())
+        count = 0
+        for j in range(1,x+1):
+            if x%j == 0:
+                count += 1
+                l1.append(j)
+        
+        length = len(l1)
+        if length == 4:
+            for k in l1:
+                l.append(k)
+    final_sum = 0
+    for i in l:
+        final_sum += i
+
+    return final_sum
+
+quatro_divisors()
