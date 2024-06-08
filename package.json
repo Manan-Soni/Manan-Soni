@@ -1,6 +1,7 @@
 {
   "name": "myresume",
   "version": "0.1.0",
+  "homepage": "https://manan-soni.github.io/Manan-Soni",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

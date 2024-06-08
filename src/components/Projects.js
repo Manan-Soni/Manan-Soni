@@ -31,7 +31,7 @@ function rmvTxt(Id) {
 
 function alterTxt() {
   if (flag === 0){
-      document.getElementById('unrealengine').style.width = '60rem'
+      document.getElementById('unrealengine').style.height = '35rem'
       for (let i=0; i<abt_unreal.length; i++) 
         {setTimeout(addTxt("text_unrealengine",abt_unreal.charAt(i)),5000)}
       flag = 1
@@ -39,7 +39,7 @@ function alterTxt() {
   
   else if (flag === 1){
     rmvTxt("text_unrealengine")
-    document.getElementById('unrealengine').style.width = '30rem'
+    document.getElementById('unrealengine').style.height = '18rem'
     flag = 0
   }
 }

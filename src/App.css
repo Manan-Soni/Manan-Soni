@@ -155,9 +155,9 @@ a {
 }
 
 .card{
-  margin-left: 9vw;
+  margin-left: 8.7vw;
   transition: 0.5s;
-  float: left;
+
 }
 
 .card:hover{
@@ -222,7 +222,7 @@ table{
   margin-left: 9vw;
   font-family: 'Share Tech';
   color: rgb(102, 102, 102);
-  margin-top: 90vh;
+  margin-top: 90px;
   margin-bottom: 90vh;
 }
 
@@ -249,14 +249,11 @@ table{
   border: 3px rgb(0, 0, 0) solid;
   transition: 0.3s ;
   margin-left: 9vw;
+
 }
 
 #text_unreal{
   color: #000000;
-}
-
-#expand_button_unreal{
-  color: white;
 }
 
 #heading_achievements{
@@ -270,7 +267,7 @@ table{
 #achv_list{
   font-family: 'Courier New', Courier, monospace;
   color: rgb(102, 102, 102);
-  font-size: 20px;
+  font-size: 30px;
   list-style-type: none;
   margin-left: 7vw;
 }
@@ -305,7 +302,7 @@ table{
 #hex_heading1{
   font-family: 'Share Tech';
   color: rgb(102, 102, 102);
-  margin-top: 50px;
+  margin-top: 90vh;
 }
 
 #hex_heading2{
