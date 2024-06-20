@@ -1,6 +1,7 @@
 <h1>Hello! Welcome to my GitHub profile</h1>
 
-<p> An independant phantomathic MERN stack developer with a taste for music and gaming. I like to spend my time learning new things, testing them out to explore their capabilities. </p>
+<p> An independant phantomathic MERN stack developer with a taste for music and gaming. I like to spend my time learning new things, testing them out to explore their capabilities. 
+Currently I am working on developing a LLM AI assistant coded to target my personal tasks</p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kritika-pattalam&layout=compact)
 
