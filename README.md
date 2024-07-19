@@ -6,7 +6,9 @@
 
 <h2><b>My Tech Stack:</b></h2>
 <table>
-  
+  <tr>
+    <td>Hello!</td>
+  </tr>  
 </table>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kritika-pattalam&layout=compact)
